@@ -1,0 +1,35 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "module": "ESnext",
+  "noEmit": true,
+  "AllowImportingTsExtensions": true,
+  "scripts": {
+    "test": "cucumber-js --config cucumber.cjs --profile default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grechemax/cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grechemax/cucumber/issues"
+  },
+  "homepage": "https://github.com/grechemax/cucumber#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.4.0",
+    "@types/chai": "^5.2.3",
+    "dotenv": "^17.2.3"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^2.4.1",
+    "chai": "^6.2.1",
+    "playwright": "^1.57.0",
+    "ts-node": "^10.9.2"
+  }
+}
