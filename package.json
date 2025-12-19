@@ -1,35 +1,48 @@
 {
-  "name": "cucumber",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "module": "ESnext",
-  "noEmit": true,
-  "AllowImportingTsExtensions": true,
-  "scripts": {
-    "test": "cucumber-js --config cucumber.cjs --profile default"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/grechemax/cucumber.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/grechemax/cucumber/issues"
-  },
-  "homepage": "https://github.com/grechemax/cucumber#readme",
-  "devDependencies": {
-    "@cucumber/cucumber": "^12.4.0",
-    "@types/chai": "^5.2.3",
-    "dotenv": "^17.2.3"
-  },
-  "dependencies": {
-    "@cucumber/pretty-formatter": "^2.4.1",
-    "chai": "^6.2.1",
-    "playwright": "^1.57.0",
-    "ts-node": "^10.9.2"
-  }
+    "name": "cucumber",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "module": "ESnext",
+    "noEmit": true,
+    "AllowImportingTsExtensions": true,
+    "scripts": {
+        "test": "cucumber-js --config cucumber.cjs --profile default",
+        "lint": "eslint \"src/**/*.ts\" --ext .ts",
+        "lint:fix": "eslint \"src/**/*.ts\" --ext .ts --fix",
+        "format": "prettier --check .",
+        "format:fix": "prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/grechemax/cucumber.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/grechemax/cucumber/issues"
+    },
+    "homepage": "https://github.com/grechemax/cucumber#readme",
+    "devDependencies": {
+        "@cucumber/cucumber": "^12.4.0",
+        "@eslint/js": "^9.39.2",
+        "@stylistic/eslint-plugin": "^5.6.1",
+        "@types/chai": "^5.2.3",
+        "@typescript-eslint/eslint-plugin": "^8.50.0",
+        "@typescript-eslint/parser": "^8.50.0",
+        "dotenv": "^17.2.3",
+        "eslint": "^9.39.2",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-unicorn": "^62.0.0",
+        "prettier": "^3.7.4",
+        "typescript-eslint": "^8.50.0"
+    },
+    "dependencies": {
+        "@cucumber/pretty-formatter": "^2.4.1",
+        "chai": "^6.2.1",
+        "playwright": "^1.57.0",
+        "ts-node": "^10.9.2"
+    }
 }
